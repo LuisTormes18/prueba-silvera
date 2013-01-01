@@ -17,24 +17,28 @@ $btnOpenVideoModal.addEventListener("click", () => {
   $VideoModal.show();
 });
 
+// Slider
+$Sliders = document.querySelectorAll("#slider > li");
+
 // menu slider
 $menuSlider = document.getElementById("menu-slider");
 $aSelectSlider = document.querySelectorAll("#menu-slider > li > a");
 
 listA = [...$aSelectSlider];
+SliderLi = [...$Sliders];
 
 $menuSlider.addEventListener("click", (e) => {
   if (e.target.href) {
-    console.log(e.target.href.split("#")[1]);
     e.preventDefault();
-
     listA.map((a) => {
       a.classList.remove("active");
     });
+    SliderLi.map((li) => {
+      li.classList.remove("opacity");
+    });
     e.target.classList.add("active");
-    const Slide = document.getElementById(e.target.href.split("#")[1]);
-    Slide.classList.add("opacity");
-    // style.opacity = 1;
-    console.log(Slide);
+    document
+      .getElementById(e.target.href.split("#")[1])
+      .classList.add("opacity");
   }
 });
