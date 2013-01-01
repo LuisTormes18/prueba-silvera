@@ -31,11 +31,13 @@ body {
 .card {
   border-radius: 10px !important;
 }
-/* [id] {
+
+[id] {
   scroll-margin-top: 40px;
-} */
+}
 section {
   height: 100vh;
+  /* height: auto; */
   padding: 40px 10%;
 }
 section .section-header {
@@ -123,22 +125,34 @@ section .section-header p {
   align-items: center;
   padding: 0px 10%;
 }
-.social_header div span i {
+/* .social_header div a i {
   padding: 0 7px;
-}
-.social_header nav a i {
-  padding: 0 10px;
+} */
+.social_header a, i {
+  padding: 0 7px;
   color: white;
+  text-decoration: none;
+  
 }
+.social_header a:hover, .social_header a:hover >i{
+  color: var(--orange);
+}
+#home{
+  /* min-height:800px; */
 
+}
 .home__hero {
+  /* min-height:800px; */
   height: calc(100vh - 40px);
+  max-height:800px;
 
   background-image: url("../img/IMAGEN HERO.jpg");
+  /* background-image: url("../Videos/hero-video.mp4"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .overlay {
   height: 100%;
   background: rgba(2, 85, 125, 0.4);
@@ -239,8 +253,9 @@ ul#menu li a {
 }
 /* section popular */
 #popular {
-  min-height: 100vh;
+  /* min-height: 800px; */
   height: auto;
+
 }
 
 .cards {
@@ -337,7 +352,7 @@ ul#menu li a {
 /*study-careers */
 #study-careers {
   height: auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 #study-careers .row {
 }
@@ -432,7 +447,9 @@ ul#menu li a {
 }
 /* testimonials */
 #testimonials {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: 800px;
+
   height: auto;
   color: white;
   background-color: var(--light-gray);
@@ -517,6 +534,7 @@ ul#menu li a {
   position: relative;
   top: -20px;
   text-transform: uppercase;
+
 }
 .card-testimonial ul {
   list-style: none;

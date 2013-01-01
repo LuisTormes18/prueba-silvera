@@ -107,6 +107,14 @@
 }
 @media (max-width: 500px) {
   #testimonials {
-    padding: 40px 0;
+    padding: 0;
   }
+ 
 }
+
+/* @media (min-height: 800px) and  (min-width: 800px){
+  .home__hero {
+    max-height:800px;
+  
+  }
+} */
