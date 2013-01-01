@@ -15,8 +15,6 @@ $btnOpenVideoModal.addEventListener("click", () => {
     document.getElementById("video-modal")
   );
   $VideoModal.show();
-
-  console.log($VideoModal);
 });
 
 // menu slider
@@ -27,9 +25,16 @@ listA = [...$aSelectSlider];
 
 $menuSlider.addEventListener("click", (e) => {
   if (e.target.href) {
+    console.log(e.target.href.split("#")[1]);
+    e.preventDefault();
+
     listA.map((a) => {
       a.classList.remove("active");
     });
     e.target.classList.add("active");
+    const Slide = document.getElementById(e.target.href.split("#")[1]);
+    Slide.classList.add("opacity");
+    // style.opacity = 1;
+    console.log(Slide);
   }
 });

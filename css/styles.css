@@ -544,7 +544,7 @@ ul#slider li::after {
 ul#slider li:first-child {
   opacity: 1;
 }
-ul#slider li:target {
+ul#slider li.opacity {
   opacity: 1;
 }
 
