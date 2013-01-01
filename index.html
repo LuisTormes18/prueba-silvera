@@ -5,88 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome/css/font-awesome.css"
+    />
+
     <title>Prueba | Silvera Enterprises</title>
   </head>
   <body>
     <div id="home">
-      <header class="home__header">
-        <div class="contact_header__left">
-          <span>123 456 789</span>
-          <span>info@email.com</span>
+      <div class="social_header">
+        <div class="">
+          <span><i class="fa fa-phone"></i>123 456 789</span>
+          <span><i class="fa fa-mail"></i>info@email.com</span>
         </div>
-        <div class="contact_header__rigth">
-          <span>[]</span>
-          <span>{}</span>
-          <span>=</span>
-        </div>
-      </header>
+        <nav>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </nav>
+      </div>
       <div class="home__hero">
-        <header class="hero_header">
-          <div class="logo"><img src="./img/LOGO.png" alt="" /></div>
-          <nav class="navbar">
-            <ul id="menu">
-              <li><a href="#about-us">About Us</a></li>
-              <li>
-                <a href="#study-careers">Courses</a>
-              </li>
-              <li>
-                <a href="#team">Team</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <div class="grid_container">
-          <div class="row row-cols-2">
-            <div class="col-8">
-              <div class="text-container">
-                <h1>Welcome a the University</h1>
-                <p>
-                  we are an online <br />
-                  platform to make learning
-                </p>
-                <button class="custom_btn">Get Now</button>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="form-container">
-                <h2>Register Now!</h2>
-                <form class="form">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    placeholder="Name"
-                  />
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control"
-                      placeholder="Email"
-                    />
-                    <input
-                      type="tel"
-                      name="phone"
-                      class="form-control"
-                      placeholder="Phone"
-                    />
-                  </div>
-                  <input
-                    type="text"
-                    name="subject"
-                    class="form-control"
-                    placeholder="Subject"
-                  />
-                  <textarea name="message" placeholder="Message"> </textarea>
+        <div class="overlay">
+          <header class="hero_header">
+            <div class="logo"><img src="./img/LOGO.png" alt="" /></div>
 
-                  <div class="form-group">
-                    <input class="custom_btn" type="submit" value="Send" />
-                  </div>
-                </form>
+            <nav id="navbar">
+              <button id="btnOpenMenu">
+                <span id="hamburger"> </span>
+              </button>
+              <ul id="menu">
+                <li><a href="#about-us">About Us</a></li>
+                <li>
+                  <a href="#study-careers">Courses</a>
+                </li>
+                <li>
+                  <a href="#team">Team</a>
+                </li>
+                <li>
+                  <a href="#footer">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+          <div class="grid_container container-fluid">
+            <div class="row row-cols-2">
+              <div class="col-12 col-sm-12 col-md-7 col-lg-8">
+                <div class="text-container">
+                  <h1>Welcome a the University</h1>
+                  <p>
+                    we are an online <br />
+                    platform to make learning
+                  </p>
+                  <button class="custom_btn">Get Now</button>
+                </div>
+              </div>
+              <div class="col-12 col-sm-0 col-md-5 col-lg-4">
+                <div class="form-container">
+                  <h2>Register Now!</h2>
+
+                  <form class="form">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                      <input
+                        type="tel"
+                        name="phone"
+                        class="form-control"
+                        placeholder="Phone"
+                      />
+                    </div>
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control"
+                      placeholder="Subject"
+                    />
+                    <textarea
+                      class="form-control"
+                      name="Menssage "
+                      placeholder="Message"
+                    ></textarea>
+
+                    <div class="form-group">
+                      <button class="custom_btn">Send</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -103,7 +123,7 @@
         <div class="card">
           <img src="./img/IMAGE CURSO 1.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Design for web with adobe photoshop</h5>
 
             <a href="#" class="custom_btn">Read More </a>
           </div>
@@ -133,11 +153,13 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-outline-warning">View More</button>
+      <div class="center">
+        <button class="custom_btn btn-outline">View More</button>
+      </div>
     </section>
     <section id="about-us">
-      <div class="row row-cols-2">
-        <div>
+      <div class="grid row row-cols-2">
+        <div class="col-6">
           <div class="section-header">
             <h2>About Us</h2>
             <p>Know everything we do for you</p>
@@ -148,78 +170,307 @@
             amet, veritatis, neque iusto officiis accusamus aperiam! Quia a
             velit reprehenderit!
           </p>
-          <button class="btn btn-outline-warning">Read More</button>
+          <button class="custom_btn">Read More</button>
         </div>
-        <div>
-          <img src="./img/IMAGE ABOUT US.jpg" alt="" />
+        <div class="col-6">
+          <figure class="image">
+            <img src="./img/IMAGE ABOUT US.jpg" alt="" />
+          </figure>
         </div>
       </div>
-      <div class="benefits-container">
-        <div class="benefit">
-          <div class="icon">
-            <img src="./img/ICONO 1.png" alt="" />
+      <div class="overlay">
+        <div class="benefits-container">
+          <div class="benefit">
+            <div class="icon">
+              <img src="./img/ICONO 1.png" alt="" />
+            </div>
+            <h4>Excellent Content</h4>
           </div>
-          <h4>Excellent Content</h4>
-        </div>
-        <div class="benefit">
-          <div class="icon">
-            <img src="./img/ICONO 2.png" alt="" />
+          <div class="benefit">
+            <div class="icon">
+              <img src="./img/ICONO 2.png" alt="" />
+            </div>
+            <h4>Experts Instructors</h4>
           </div>
-          <h4>Experts Instructors</h4>
-        </div>
-        <div class="benefit">
-          <div class="icon">
-            <img src="./img/ICONO 3.png" alt="" />
+          <div class="benefit">
+            <div class="icon">
+              <img src="./img/ICONO 3.png" alt="" />
+            </div>
+            <h4>The Bets Professionals</h4>
           </div>
-          <h4>The Bets Professionals</h4>
-        </div>
-        <div class="benefit">
-          <div class="icon">
-            <img src="./img/ICONO 4.png" alt="" />
+          <div class="benefit">
+            <div class="icon">
+              <img src="./img/ICONO 4.png" alt="" />
+            </div>
+            <h4>Countless Courses</h4>
           </div>
-          <h4>Countless Courses</h4>
         </div>
       </div>
     </section>
     <section id="study-careers">
-      <div class="study-careers__header">
+      <div class="section-header">
         <h2>Study careers</h2>
         <p>Explore the different careers we offer</p>
       </div>
-      <div class="grid"></div>
+      <div class="row row-cols-2">
+        <div class="row">
+          <div class="overlay">
+            <div class="col-md-6 careers-1">
+             <div class="overlay">
+              <h2>Titulo</h2>
+              <a href="" class="custom_btn">Explore</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6 careers-1">
+            <div class="overlay">
+              <h2>Titulo</h2>
+              <a href="" class="custom_btn">Explore</a>
+            </div>
+          </div>
+          <div class="col-md-col-md-12 careers">
+            <div class="overlay">
+              <h2>Titulo</h2>
+              <a href="" class="custom_btn">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 careers-1">
+            <div class="overlay">
+              <h2>Titulo</h2>
+              <a href="" class="custom_btn">Explore</a>
+            </div>
+          </div>
+          <div class="col-md-12 careers-1">
+            <div class="overlay">
+              <h2>Titulo</h2>
+              <a href="" class="custom_btn">Explore</a>
+            </div>
+          </div>
+          <div class="col-md-12 careers">
+            <div class="overlay">
+              <h2>Titulo</h2>
+              <a href="" class="custom_btn">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="grid">
+        <div class="col-6 careers-1">
+          <div class="">
+            <h2>Titulo</h2>
+            <button class="custom_btn">Explore</button>
+          </div>
+        </div>
+        <div class="col-6 careers careers-2">
+          <div class="overlay">
+            <div class="card">
+              <img
+                src="./img/IMAGE CURSO 1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Design for web with adobe photoshop</h5>
+
+                <a href="#" class="custom_btn">Read More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 careers careers-3">
+            <div class="overlay">
+              <h2>Titulo</h2>
+              <button class="custom_btn">Explore</button>
+            </div>
+          </div>
+          <div class="col-6 careers careers-4">
+            <div class="overlay">
+              <h2>c4</h2>
+              <button class="custom_btn">Explore</button>
+            </div>
+          </div>
+          <div class="col-6 careers careers-5">
+            <div class="overlay">
+              <h2>Architecture</h2>
+              <button class="custom_btn">Explore</button>
+            </div>
+          </div>
+          <div class="col-6 careers careers-6">
+            <div class="overlay">
+              <h2>Titulo</h2>
+              <button class="custom_btn">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
       <button class="btn btn-outline-warning">View More</button>
     </section>
-    <section id="team">ta</section>
+
+    <section id="team">
+      <div class="section-header">
+        <h2>The mots Popular</h2>
+        <p>Know What we offer you</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="./img/IMAGE BACKGROUND CARD TEAM  (1).jpg"
+            class="card-img-top img-overlay"
+            alt="..."
+          />
+          <div class="card-body">
+            <figure>
+              <img src="./img/IMAGE TEAM 1.jpg" alt="..." />
+            </figure>
+            <h5 class="card-title">Jhon Smith</h5>
+            <p class="card-subtitle">Math Teacher</p>
+
+            <a href="#" class="custom_btn btn-outline">Read More </a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./img/IMAGE BACKGROUND CARD TEAM  (2).jpg"
+            class="card-img-top"
+            alt="..."
+          />
+
+          <div class="card-body">
+            <figure>
+              <img src="./img/IMAGE TEAM 2.jpg" alt="..." />
+            </figure>
+            <h5 class="card-title">Jhon Smith</h5>
+            <p class="card-subtitle">Math Teacher</p>
+
+            <a href="#" class="custom_btn btn-outline">Read More </a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./img/IMAGE BACKGROUND CARD TEAM  (3).jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <figure>
+              <img src="./img/IMAGE TEAM 3.jpg" alt="..." />
+            </figure>
+            <h5 class="card-title">Jhon Smith</h5>
+            <p class="card-subtitle">Math Teacher</p>
+
+            <a href="#" class="custom_btn btn-outline">Read More </a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./img/IMAGE BACKGROUND CARD TEAM  (1).jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <figure>
+              <img src="./img/IMAGE TEAM 4.jpg" alt="..." />
+            </figure>
+            <h5 class="card-title">Jhon Smith</h5>
+            <p class="card-subtitle">Math Teacher</p>
+
+            <a href="#" class="custom_btn btn-outline">Read More </a>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <button class="custom_btn">View More</button>
+      </div>
+    </section>
     <section id="testimonials">
       <div class="content">
-        <div class="row row-cols-2">
-          <div class="text">
-            <h2>View Testimonials</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae.
-            </p>
-          </div>
-          <div class="slide">
-            <img src="./img/person_1.jpg" alt="" />
+        <div class="overlay">
+          <div class="grid row row-cols-2">
+            <div class="col-6">
+              <div class="text">
+                <h2>View Testimonials</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  nihil cumque adipisci
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="slider">
+                <img src="./img/person_1.jpg" alt="" />
+                <h2>Persona number1</h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <footer>
-      <div class="grid">
-        <div class="logo"></div>
-        <div class="quisk-list"></div>
-        <div class="contact-info"></div>
-        <div class="newsletter"></div>
+    <footer id="footer">
+      <div class="row row-cols-2">
+        <div class="col-md-3">
+          <div class="logo"><img src="./img/LOGO.png" alt="" /></div>
+        </div>
+        <div class="col-md-3">
+          <h3>Quits List</h3>
+
+          <ul>
+            <li><a href="#about-us">About Us</a></li>
+            <li>
+              <a href="#study-careers">Courses</a>
+            </li>
+            <li>
+              <a href="#team">Team</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact Info</h3>
+          <div class="item">
+            <p><i class="fa fa-phone"></i>Phone: +1 123 456 1234</p>
+            <p><i class="fa fa-youtube"></i>Email: info@company.com</p>
+            <p><i class="fa fa-adress"></i>adress, United Estates</p>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>NewsLetter</h3>
+          <p>Recive all our promtions and notifications</p>
+          <form>
+            <input type="text" name="" /><input
+              class="custom_btn"
+              type="submit"
+              value="Submit"
+              name=""
+            />
+          </form>
+        </div>
       </div>
-      <hr />
-      <div class="licencia">
-        <span>Lorem ipsum dolor sit amet.</span>
-        <div class="logo">
-          <img src="./img/logo Silvera Enterprises.png" alt="" />
+      <div class="container-fluid text-center copyrights">
+        <hr />
+        <div class="licencia">
+          <p>&copy; 2022 copyrights</p>
+          <div class="logo">
+            <img src="./img/logo Silvera Enterprises.png" alt="" />
+          </div>
         </div>
       </div>
     </footer>
   </body>
+  <script type="text/javascript" src="./main.js"></script>
 </html>
