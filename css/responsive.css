@@ -82,10 +82,21 @@
   .form-container {
     display: none;
   }
+}
+@media (max-width: 370px) {
+  .text-container p {
+    font-size: 2em;
+  }
+}
+@media (max-width: 780px) {
+  #study-careers #careers-1,
+  #careers-2 {
+    height: 150px;
+  }
+}
 
-}
-@media(max-width: 370px){
-.text-container p {
-  font-size: 2em;
-}
+@media (max-width: 400px) {
+  footer form {
+    flex-wrap: wrap;
+  }
 }

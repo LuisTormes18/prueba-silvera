@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<style>
+  /* testimonial */
+  #testimonials {
+    height: 100vh;
+    color: #fffdfd;
+  }
+  #testimonials .row {
+    background-image: url("./img/IMAGE CURSO 1.jpg");
+    width: 80%;
+    min-height: 500px;
+    height: auto;
+    max-width: 800px;
+    position: relative;
+  }
+  #testimonials .row::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(187, 24, 24, 0.09);
+    z-index: 20000;
+    position: absolute;
+    top: 0;
+  }
+  #testimonials .text {
+    z-index: 500000;
+  }
+  #testimonials .text h2 {
+    font-size: 1em;
+  }
+  #testimonials .text p {
+    font-size: 1.5em;
+  }
+  .testimonial {
+    position: relative;
+  }
+  .testimonial::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.009);
+    z-index: 20000;
+    position: absolute;
+    top: 0;
+  }
+  .testimonial p {
+    background-color: rgb(240, 237, 238);
+    color: rgb(216, 124, 20);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 7px;
+    z-index: 500000;
+  }
+</style>
+<section
+  id="testimonials"
+  class="d-flex justify-content-center align-items-center"
+>
+  <div class="row">
+    <div class="col-12 col-md-6 d-flex align-items-center">
+      <div class="text text-center m-3">
+        <h2>View Testimonials</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil
+          cumque adipisci
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 d-flex align-items-center">
+      <div class="testimonial text-center" style="width: 100%; height: auto">
+        <img
+          class="img-fluid"
+          style="width: 100%"
+          src="./img/person_1.jpg"
+          alt=""
+        />
+        <!-- <video
+          src="./Videos/review-1.mp4"
+          style="width: 100%"
+          controls=""
+        ></video> -->
+        <div class="d-flex justify-content-center">
+          <p class="">Persona number1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

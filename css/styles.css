@@ -23,7 +23,9 @@ html {
   --box-shadow: 5px 5px 5px rgb(83, 83, 82);
   --box-shadow-hover: 10px 10px 10px rgb(58, 56, 56);
 }
-
+.card {
+  border-radius: 10px !important;
+}
 section {
   height: 100vh;
   padding: 40px 10%;
@@ -244,6 +246,9 @@ section .section-header p {
   width: 220px;
   box-shadow: 5px 5px 10px var(--gray);
 }
+.card .card-img-top {
+  border-bottom: 6px solid var(--orange);
+}
 .card-body {
   justify-content: center;
   align-items: center;
@@ -252,7 +257,8 @@ section .section-header p {
   text-align: center;
 }
 .card-title {
-  font-size: 1em;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 /* About US */
 #about-us {
@@ -289,14 +295,10 @@ section .section-header p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 30px;
 }
-
+.benefits-container .overlay {
+  background-color: rgba(33, 32, 36, 0.7);
+}
 .benefit {
   display: flex;
   flex-direction: column;
@@ -306,12 +308,13 @@ section .section-header p {
 }
 .benefit .icon {
   background-color: white;
-  padding: 15px;
   border-radius: 50%;
   height: 70px;
   width: 70px;
 }
 .benefit .icon img {
+  padding: 15px;
+
   height: 100%;
   width: 100%;
 }
@@ -320,45 +323,61 @@ section .section-header p {
   color: white;
   font-size: 1em;
 }
-/*study-careers*/
+/*study-careers */
 #study-careers {
   height: auto;
   min-height: 100vh;
 }
-.careers-1 {
-  background-image: url("../img/BACKGROUND BENEFITS.jpg");
-}
-/* .grid {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
-  grid-template-areas:
-    "c1 c2 c3"
-    "c1 c2 c4"
-    "c5 c5 c6";
-  grid-gap: 20px;
+#study-careers .row .overlay {
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .careers {
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 15px;
+  border-radius: 7px !important;
   width: 100%;
-  justify-self: center;
+  height: 150px;
+
+  position: relative;
 }
 
-.careers-2 {
-  grid-area: c2;
+#careers-1 {
+  background-image: url("../img/IMAGE  CATEGORY ADMINISTRATION.jpg");
+  height: 320px;
+  width: 100%;
 }
-.careers-3 {
-  grid-area: c3;
+#careers-2 {
+  background-image: url("../img/IMAGE\ \ CATEGORY\ ACCOUNTING.jpg");
+  height: 320px;
 }
-.careers-4 {
-  grid-area: c4;
+#careers-3 {
+  background-image: url("../img/IMAGE\ \ CATEGORY\ ARCHITECTURE.jpg");
 }
-.careers-5 {
-  grid-area: c5;
+
+#careers-4 {
+  background-image: url("../img/IMAGE\ \ CATEGORY\ BIOLOGY.jpg");
 }
-.careers-6 {
-  grid-area: c6;
-} */
+#careers-5 {
+  background-image: url("../img/IMAGE\ \ CATEGORY\ MATHEMATICS.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+#careers-6 {
+  background-image: url("../img/IMAGE\ \ CATEGORY\ PROGRAMMING.jpg");
+}
+.careers .content {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+.careers .content h4 {
+  color: white;
+  font-size: 1.3em;
+}
 /* Team */
 #team {
   height: auto;
@@ -389,48 +408,94 @@ section .section-header p {
   height: 230px;
 }
 #team .cards .card-body .card-title {
-  font-size: 1.7em;
+  font-size: 1.5em;
+  font-weight: bold;
   color: var(--dark_blue);
 }
 #team .cards .card-body .card-subtitle {
   color: var(--orange);
-  font-size: 1.7em;
+  font-size: 1.3em;
+  padding: 5px;
 }
 /*#team .cards .card-body  .card-btn{
   padding: 10px 0;
 }*/
-/* testimonial */
+/* testimonials */
 #testimonials {
-  height: 700px;
-  background-color: var(--light-gray);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.content {
-  height: 500px;
-  max-width: 800px;
+  min-height: 100vh;
+  height: auto;
   color: white;
+  background-color: var(--light-gray);
+}
+#testimonials .row {
   background-image: url("../img/IMAGE TESTIMONIALS.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.text {
-  height: 100%;
-  text-align: center;
-}
-#testimonials .grid {
-  padding: 40px 10%;
+  width: 80%;
+  min-height: 500px;
   height: auto;
+  max-width: 800px;
+  position: relative;
 }
-
-.text h2 {
-  font-size: 0.9em;
+#testimonials .row::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(4, 8, 54, 0.5);
+  z-index: 20000;
+  position: absolute;
+  top: 0;
 }
-.text p {
+#testimonials .text {
+  z-index: 500000;
+}
+#testimonials .text h2 {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+#testimonials .text p {
   font-size: 2em;
+  text-transform: uppercase;
+}
+.testimonial {
+  position: relative;
+  margin: 40px;
+}
+/* #slider {
+  background-color: red;
+  height: inherit;
+  list-style: none;
+}
+#slider li {
+  display: none;
+}
+.testimonial #slider li:first-child {
+  display: block;
+} */
+
+.testimonial::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.09);
+  z-index: 20000;
+  position: absolute;
+  top: 0;
+}
+.testimonial p {
+  background-color: rgb(240, 237, 238);
+  color: var(--orange);
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 7px;
+  z-index: 50000000;
+  position: relative;
+  top: -20px;
+  text-transform: uppercase;
 }
 /* footer */
 
@@ -500,7 +565,6 @@ footer form {
   width: 100%;
 
   display: flex;
-  /*flex-wrap: wrap;*/
   border-radius: 28px;
   background-color: #fff;
 
