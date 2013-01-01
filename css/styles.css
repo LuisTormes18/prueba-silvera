@@ -483,7 +483,7 @@ ul#menu li a:hover {
 /* testimonials */
 #testimonials {
   /* min-height: 100vh; */
-  min-height: 800px;
+  /* min-height: 700px; */
 
   height: auto;
   color: white;
@@ -520,6 +520,7 @@ ul#menu li a:hover {
 #testimonials .text p {
   font-size: 2em;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .card-testimonial {
   height: 350px;
@@ -652,9 +653,10 @@ footer .licencia .logo img {
 }
 footer h3 {
   color: var(--orange);
-  font-weight: 400;
+  font-weight: bold;
   font-size: 1.5em;
   margin-bottom: 20px;
+
 }
 footer ul {
   padding: 0;
