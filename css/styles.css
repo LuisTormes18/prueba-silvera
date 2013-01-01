@@ -339,8 +339,7 @@ section .section-header p {
   height: auto;
   min-height: 100vh;
 }
-#study-careers .row{
- 
+#study-careers .row {
 }
 #study-careers .row .overlay {
   border-radius: 7px;
@@ -492,18 +491,18 @@ section .section-header p {
   text-align: center;
   cursor: pointer;
 }
-#video-modal{
-  z-index: 50000000000000000000000 ;
+#video-modal {
+  z-index: 50000000000000000000000;
   padding: 10px !important;
 }
-.modal-content{
-   height: 100% !important;
+.modal-content {
+  height: 100% !important;
   /*background-color: transparent !important;*/
-  border:none !important;
+  border: none !important;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.modal-body{
+.modal-body {
   height: 100% !important;
   background-color: transparent !important;
 }
@@ -570,7 +569,7 @@ ul#menu-slider li a {
   width: 5px;
   border-radius: 50%;
 }
-ul#menu-slider li a.active{
+ul#menu-slider li a.active {
   border: 1.5px solid var(--orange);
 }
 /* footer */
