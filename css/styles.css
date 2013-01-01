@@ -143,6 +143,7 @@ section .section-header p {
   height: 100%;
   background: rgba(2, 85, 125, 0.4);
 }
+
 .hero_header {
   display: flex;
   justify-content: space-between;
@@ -151,14 +152,13 @@ section .section-header p {
   height: 80px;
 }
 
-.hero_header nav#navbar ul#menu {
+ul#menu {
   display: flex;
   align-items: center;
   list-style: none;
 }
-.hero_header nav#navbar ul#menu li {
-}
-.hero_header nav#navbar ul#menu li a {
+
+ul#menu li a {
   text-decoration: none;
   padding: 0 5px;
   color: white;
