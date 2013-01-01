@@ -1,3 +1,18 @@
+
+//  sticky
+const $header = document.querySelector(".hero_header");
+
+window.onscroll = () => {
+    let ScrollPosition = window.pageYOffset;
+
+    if (ScrollPosition > 50) {
+        $header.classList.add("sticky");
+    } else {
+        $header.classList.remove("sticky");
+    }
+};
+
+//open menu
 const toggleMenu = () => {
   const $nav = document.getElementById("navbar");
   $nav.classList.toggle("active-menu-mobile");
@@ -5,8 +20,6 @@ const toggleMenu = () => {
 
 const $btnMobile = document.getElementById("btnOpenMenu");
 $btnMobile.addEventListener("click",toggleMenu);
-
-//
 
 const $btnOpenVideoModal = document.getElementById("btn-video-play");
 
