@@ -1,0 +1,22 @@
+Hola, a continuacion podras leer las indicaciones para realizar la prueba de conocimiento.
+
+ 
+Este proyecto de practica consiste en replicar el diseño de las capturas de la pagina, que estan anexas en este mismo correo.
+
+Tienes 2 dias para terminar el proyecto, a partir del dia que decidas comenzar, nos puedes avisar. 
+
+Atinale a hacerla identica, debes utilizar: HTML, CSS, Bootstrap y Javascript. (Que sea responsive, que se vea bien al telefono la homepage). 
+
+*Este es un proyecto sencillo ya finalizado.
+
+Todos lo recursos de contenido para hacerla estan anexos. El Hero lleva un video de background.
+
+
+Debes re-enviar los archivos respondiendo a este correo.
+
+Puede ser un link de Google drive o Dropbox con los archivos o subirlo a internet en un hosting gratuito, como mas comodo se te haga.
+
+Al terminar la prueba debes enviar una notificacion al correo maria.chirinos@josesilvera.com.
+
+
+Muchas gracias, que tengas una excelente noche/dia y esperamos oir muy pronto de ti.
