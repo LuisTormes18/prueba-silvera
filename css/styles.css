@@ -18,12 +18,50 @@ html {
   --orange: #ffb749;
   --orange-hover: rgb(243, 160, 83);
   --light-gray: #f9f9fb;
+  --dark-gray: rgb(187, 185, 185);
   --gray: #efefef;
   --box-shadow: 5px 5px 5px rgb(83, 83, 82);
   --box-shadow-hover: 10px 10px 10px rgb(58, 56, 56);
 }
 section {
   height: 100vh;
+  padding: 40px 10%;
+}
+section .section-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+section .section-header::before {
+  content: "";
+  display: block;
+  background-color: var(--orange);
+  width: 5px;
+  height: 5px;
+
+  position: absolute;
+  top: 15px;
+
+  left: -20px;
+
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 15px;
+}
+section .section-header h2 {
+  font-size: 1.6em;
+}
+section .section-header h2::after {
+  content: "";
+  display: block;
+  background-color: var(--orange);
+  width: 30%;
+  height: 5px;
+  margin-top: 10px;
+}
+section .section-header p {
+  font-size: 2em;
+  font-weight: bold;
 }
 .custom_btn {
   border: none;
@@ -31,6 +69,7 @@ section {
   padding: 10px 30px;
   background-color: var(--orange);
   color: #f1f1f1;
+  text-decoration: none;
 }
 .custom_btn:hover {
   background-color: var(--orange-hover);
@@ -75,15 +114,92 @@ section {
   height: 100%;
   width: 100%;
 }
+.hero_header nav.navbar ul#menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 25px;
 
-.form-container {
-  padding: 40px;
-  background-color: blue;
+  padding-top: 30px;
 }
+.hero_header nav.navbar ul#menu a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+}
+
+.home__hero div.grid_container {
+  padding: 40px 10%;
+}
+.text-container {
+  color: white;
+}
+.text-container h1 {
+  font-size: 1.5em;
+}
+.text-container h1::after {
+  content: "";
+  display: block;
+  background-color: var(--orange);
+  width: 30%;
+  height: 5px;
+  margin-top: 10px;
+}
+.text-container p {
+  font-weight: bold;
+  font-size: 2.7em;
+}
+.form-container {
+  background-color: white;
+
+  text-align: center;
+  padding: 0px;
+
+  max-width: 400px;
+
+  border-radius: 15px;
+}
+.form-container h2 {
+  border-radius: 15px 15px 0 0;
+  background-color: var(--dark_blue);
+  padding: 20px;
+  color: white;
+  font-size: 1.3em;
+
+  border-bottom: 5px solid var(--orange);
+}
+
 .form {
+  padding: 10px;
+}
+.form input {
+  margin-top: 10px;
+
+  background-color: var(--dark-gray);
+  border-radius: 28px;
+  border: none;
+}
+.form input:focus {
+  outline: none;
+  background-color: var(--gray);
+}
+.form div.form-group {
+  display: flex;
+  gap: 10px;
+}
+.fom textarea {
+  width: 100%;
 }
 /* section popular */
-
+.cards {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+}
+.custom_card {
+  border-radius: 15px;
+}
 /* About US */
 #about-us {
   background-color: var(--dark_blue);

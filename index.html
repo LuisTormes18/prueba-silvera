@@ -9,7 +9,7 @@
     <title>Prueba | Silvera Enterprises</title>
   </head>
   <body>
-    <section id="home">
+    <div id="home">
       <header class="home__header">
         <div class="contact_header__left">
           <span>123 456 789</span>
@@ -24,7 +24,7 @@
       <div class="home__hero">
         <header class="hero_header">
           <div class="logo"><img src="./img/LOGO.png" alt="" /></div>
-          <nav id="navbar">
+          <nav class="navbar">
             <ul id="menu">
               <li><a href="#about-us">About Us</a></li>
               <li>
@@ -39,25 +39,52 @@
             </ul>
           </nav>
         </header>
-        <div class="container">
+        <div class="grid_container">
           <div class="row row-cols-2">
-            <div class="col text_container">
-              <h1>Welcome a the University</h1>
-              <p>we are an online platform to make learning</p>
-              <button class="custom_btn">Get Now</button>
+            <div class="col-8">
+              <div class="text-container">
+                <h1>Welcome a the University</h1>
+                <p>
+                  we are an online <br />
+                  platform to make learning
+                </p>
+                <button class="custom_btn">Get Now</button>
+              </div>
             </div>
-            <div class="col">
+            <div class="col-4">
               <div class="form-container">
                 <h2>Register Now!</h2>
                 <form class="form">
-                  <input type="text" name="name" class="form-control" />
-                  <input type="email" name="email" class="form-control" />
-                  <input type="tel" name="phone" class="form-control" />
-                  <input type="text" name="subject" class="form-control" />
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Name"
+                  />
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form-control"
+                      placeholder="Phone"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control"
+                    placeholder="Subject"
+                  />
                   <textarea name="message" placeholder="Message"> </textarea>
 
                   <div class="form-group">
-                    <input class="custom_btn" type="submit" value="Login" />
+                    <input class="custom_btn" type="submit" value="Send" />
                   </div>
                 </form>
               </div>
@@ -65,30 +92,62 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section id="popular">
-      <h2>The mots Popular</h2>
-      <p>Know What we offer you</p>
-      <!-- <div class="grid-cards">
+      <div class="section-header">
+        <h2>The mots Popular</h2>
+        <p>Know What we offer you</p>
+      </div>
+      <div class="cards">
         <div class="card">
           <img src="./img/IMAGE CURSO 1.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <a href="#" class="custom_btn">Read More </a>
           </div>
         </div>
-      </div> -->
+        <div class="card">
+          <img src="./img/IMAGE CURSO 2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+
+            <a href="#" class="custom_btn">Read More </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/IMAGE CURSO 3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+
+            <a href="#" class="custom_btn">Read More </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/IMAGE CURSO 4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+
+            <a href="#" class="custom_btn">Read More </a>
+          </div>
+        </div>
+      </div>
       <button class="btn btn-outline-warning">View More</button>
     </section>
     <section id="about-us">
       <div class="row row-cols-2">
         <div>
-          <h2>About Us</h2>
-          <p>Know everything we do for you</p>
+          <div class="section-header">
+            <h2>About Us</h2>
+            <p>Know everything we do for you</p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil
+            cumque adipisci animi deleniti delectus eveniet quasi mollitia at
+            amet, veritatis, neque iusto officiis accusamus aperiam! Quia a
+            velit reprehenderit!
+          </p>
           <button class="btn btn-outline-warning">Read More</button>
         </div>
         <div>
