@@ -289,7 +289,8 @@ section .section-header p {
 }
 
 .benefits-container {
-  height: 400px;
+  min-height: 400px;
+  height: auto;
 
   background: url("../img/BACKGROUND BENEFITS.jpg");
   background-size: cover;
@@ -298,6 +299,8 @@ section .section-header p {
 }
 .benefits-container .overlay {
   background-color: rgba(33, 32, 36, 0.7);
+  min-height: 400px;
+  height: auto;
 }
 .benefit {
   display: flex;
@@ -321,7 +324,7 @@ section .section-header p {
 
 .benefit h4 {
   color: white;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 /*study-careers */
 #study-careers {
@@ -417,9 +420,6 @@ section .section-header p {
   font-size: 1.3em;
   padding: 5px;
 }
-/*#team .cards .card-body  .card-btn{
-  padding: 10px 0;
-}*/
 /* testimonials */
 #testimonials {
   min-height: 100vh;
@@ -459,33 +459,14 @@ section .section-header p {
   font-size: 2em;
   text-transform: uppercase;
 }
-.testimonial {
-  position: relative;
-  margin: 40px;
-}
-/* #slider {
-  background-color: red;
-  height: inherit;
-  list-style: none;
-}
-#slider li {
-  display: none;
-}
-.testimonial #slider li:first-child {
-  display: block;
-} */
+.card-testimonial {
+  height: 350px;
 
-.testimonial::after {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.09);
-  z-index: 20000;
-  position: absolute;
-  top: 0;
+  padding: 0;
+  margin: 0;
 }
-.testimonial p {
+
+.card-testimonial p {
   background-color: rgb(240, 237, 238);
   color: var(--orange);
   font-size: 0.9em;
@@ -496,6 +477,57 @@ section .section-header p {
   position: relative;
   top: -20px;
   text-transform: uppercase;
+}
+.card-testimonial ul {
+  list-style: none;
+  width: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+ul#slider li {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+ul#slider li::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.09);
+  z-index: 20000;
+  position: absolute;
+  top: 0;
+}
+ul#slider li:first-child {
+  opacity: 1;
+}
+ul#slider li:target {
+  opacity: 1;
+}
+
+ul#menu-slider {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  z-index: 50000000;
+  position: relative;
+  top: -65px;
+  padding: 0;
+  margin: 0;
+}
+ul#menu-slider li {
+  display: inline-block;
+}
+ul#menu-slider li a {
+  display: block;
+  background-color: white;
+  padding: 5px;
+  width: 5px;
+  border-radius: 50%;
 }
 /* footer */
 
@@ -562,6 +594,7 @@ footer hr {
 }
 footer form {
   min-width: 200px;
+  max-width: 350px;
   width: 100%;
 
   display: flex;
@@ -570,6 +603,7 @@ footer form {
 
   width: auto;
 }
+
 footer form input {
   width: 50%;
   border-radius: 28px;

@@ -100,3 +100,13 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 780px) {
+  #testimonials .row {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  #testimonials {
+    padding: 40px 0;
+  }
+}
