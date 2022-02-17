@@ -88,7 +88,7 @@
     font-size: 2em;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 767px) {
   #study-careers #careers-1,
   #careers-2 {
     height: 150px;
