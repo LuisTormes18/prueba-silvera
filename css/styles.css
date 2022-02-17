@@ -489,7 +489,21 @@ section .section-header p {
   text-align: center;
   cursor: pointer;
 }
-
+#video-modal{
+  z-index: 50000000000000000000000 ;
+  padding: 0;
+}
+.modal-content{
+   height: 100% !important;
+  /*background-color: transparent !important;*/
+  border:none !important;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.modal-body{
+  height: 100% !important;
+  background-color: transparent !important;
+}
 .card-testimonial p {
   background-color: rgb(240, 237, 238);
   color: var(--orange);
@@ -553,7 +567,9 @@ ul#menu-slider li a {
   width: 5px;
   border-radius: 50%;
 }
-
+ul#menu-slider li a.active{
+  border: 1.5px solid var(--orange);
+}
 /* footer */
 
 footer {
