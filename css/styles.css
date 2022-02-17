@@ -339,6 +339,9 @@ section .section-header p {
   height: auto;
   min-height: 100vh;
 }
+#study-careers .row{
+ 
+}
 #study-careers .row .overlay {
   border-radius: 7px;
   background-color: rgba(0, 0, 0, 0.5);
